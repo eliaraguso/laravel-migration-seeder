@@ -19,6 +19,8 @@ class CreatePacchettiViaggioTable extends Migration
             $table->string('compagnia');
             $table->string('hotel');
             $table->tinyInteger('notti');
+            $table->date('data_partenza');
+            $table->date('data_ritorno');
             $table->float('prezzo', 10, 2);
             $table->timestamps();
         });
